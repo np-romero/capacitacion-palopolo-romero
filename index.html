@@ -6,14 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capacitación Interna</title>
-    <link rel="stylesheet" href="./styles/styles.css"/>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="icon" type="image/png" href="./images/favicon.png" />
 </head>
 
 <body>
     <header id="header" class="header">
-        <img class="imagen-logo" src="images/logo-example1.png" alt="Aqui logo">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Perfit</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Home
+                      <span class="visually-hidden">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/metodologias.html">Metodologías</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/herramientas.html">Herramientas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/ejemplos.html">Ejemplos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <!--<a class="d-flex" href="pages/contacto.html" class="menu__contacto">Contacto</a>-->
+                </div>
+            </div>
+          </nav>
     </header>
+    
+    <!--
     <div class="menu">
         <nav>
             <ul>
@@ -25,13 +57,54 @@
             </ul>
         </nav>
     </div>
+    -->
     <div class="portada">
         <h1 class="portada__titulo">¿Las tareas se acumulan?</h1>
     </div>
     <div class="intro-porque">
         <h2 class="intro-porque__titulo">Planificar tus actividades te puede ayudar</h2>
-        <p class="intro-porque_parrafo">El objetivo de este sítio es brindar herramientas que permitan mejorar la ejecución de tareas y actividades. Planificar es clave para entender prioridades, ahorrar tiempo a futuro y evitar el stress. Espero que te sea útil y aguardamos tu feedback 🤗 </p>
+        <p class="intro-porque_parrafo">El objetivo de este sítio es brindar herramientas que permitan mejorar la
+            ejecución de tareas y actividades. Planificar es clave para entender prioridades, ahorrar tiempo a futuro y
+            evitar el stress. Espero que te sea útil y aguardamos tu feedback 🤗 </p>
     </div>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+            <div class="col">
+                <div class="card">
+                    <img src="../capacitacion-palopolo-romero/images/leon-Oalh2MojUuk-unsplash.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Metodologías</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../capacitacion-palopolo-romero/images/leon-6WR1FmbVbUE-unsplash.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Herramientas</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="../capacitacion-palopolo-romero/images/leon-vbxyFxlgpjM-unsplash.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ejemplos</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
     <div class="cards">
         <div class="card">
             <div class="card__titulo card-metodologia"></div>
@@ -50,19 +123,25 @@
             <p class="card__parrafo">Lorem ipsum dolor siusamus reprehenderit aliquid, iusto voluptatum similique blanditiis eveniet. Fugiat, nesciunt, veritatis optio quo, cupiditate eaque vitae quisquam nam atque numquam. <a href="pages/ejemplos.html">Leer más</a></p>
         </div>
     </div>
+    -->
     <br>
-    <div class="intro-porque">
+    <div class="intro-porque como-funciona">
         <h2 class="intro-porque__titulo ">¿Cómo funciona esto?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quod atque aut vitae rem maiores amet fugit blanditiis soluta?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, minus. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Dolorem quod atque aut vitae rem maiores amet fugit blanditiis soluta?</p>
         <br>
-        <a href="pages/metodologias.html">EMPEZAR AHORA</a>
+        <button class="btn btn-primary" type="button"><a href="pages/metodologias.html">EMPEZAR AHORA</a></button>
+
     </div>
-    <a class="subir" href="#header">Subir</a>
     <footer class="footer">
-        <p class="footer__parrafo">Esto es una pagina para capacitación interna</p>
+        <!--<p class="footer__parrafo">Esto es una pagina para capacitación interna</p>
         <p class="footer__ayuda">¿Necesitás ayuda? <a href="pages/contacto.html">Contáctanos</a></p>
+        -->
+        <p>Esto es una pagina para capacitación interna</p>
+        <p class="footer__ayuda">¿Necesitás ayuda? <a href="pages/contacto.html">Contáctanos</a></p>
+
     </footer>
-   
+
 </body>
 
 </html>

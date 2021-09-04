@@ -112,9 +112,14 @@ body {
 
 .intro-porque {
     padding: 20px;
+    margin-bottom: 20px;
     background-color: #EDEDED;
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
+}
+
+.intro-porque.como-funciona {
+    margin-bottom: 0px;
 }
 
 .intro-porque__titulo {
@@ -137,7 +142,7 @@ body {
 }
 
 .intro-porque a {
-    color:#0e0e0e;
+    /*color:#0e0e0e;*/
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
@@ -147,6 +152,7 @@ body {
     animation-duration: 3s;
     animation-iteration-count: infinite;*/
 }
+
 /*
 @keyframes empezar {
     from {
@@ -163,7 +169,7 @@ p {
     line-height: 1.5;
     text-align: center;
 }
-
+/*
 .cards {
     margin-top: 20px;
     display: flex;
@@ -228,7 +234,7 @@ p {
     text-decoration: none;
     font-size: 15px;
 }
-
+*/
 .metodologias {
     padding: 5%;
     display: grid;   
@@ -425,15 +431,15 @@ p {
 }
 
 .footer {
-
-    height: 30px;
+    width: 100%;
+    height: auto;
     padding: 20px;
-    margin-top: 20px;
+    margin-bottom: 0;
     font-size: 18px;
     text-align: left;
     color: var(--color-font-s);
     display: flex;
-    background-image: linear-gradient(#ffba53, #FF913D);
+    background-color: var(--color-secundario);
 }
 
 .footer__parrafo {
