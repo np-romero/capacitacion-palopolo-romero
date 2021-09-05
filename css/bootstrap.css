@@ -105,6 +105,9 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
 }
+
+/* Media Query */
+
 @media (min-width: 1200px) {
   h1, .h1 {
     font-size: 2.5rem;
@@ -114,6 +117,7 @@ h1, .h1 {
 h2, .h2 {
   font-size: calc(1.325rem + 0.9vw);
 }
+
 @media (min-width: 1200px) {
   h2, .h2 {
     font-size: 2rem;
@@ -135,6 +139,14 @@ h4, .h4 {
 @media (min-width: 1200px) {
   h4, .h4 {
     font-size: 1.5rem;
+  }
+
+}
+
+@media (max-width: 576px) {
+.portada .portada__titulo {
+    font-size: 45px;
+    text-align: left;
   }
 }
 
@@ -5520,6 +5532,13 @@ textarea.form-control-lg {
   position: relative;
   flex: 1 1 auto;
   padding: 1rem;
+}
+
+.modal-body a {
+  text-decoration: none;
+  color: #0e0e0e;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .modal-footer {

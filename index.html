@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Capacitación Interna</title>
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -12,6 +12,23 @@
 </head>
 
 <body>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Hola!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Esta és una página de capacitación interna para los colaboradores de la empresa. Si tienes algunas duda, escríbenos desde nuestro <a href="./pages/contacto.html">Formulario de Contacto</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendí</button>
+        </div>
+      </div>
+    </div>
+  </div>
     <header id="header" class="header">
         <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="container-fluid">
@@ -71,8 +88,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
             <div class="col">
                 <div class="card">
-                    <img src="../capacitacion-palopolo-romero/images/leon-Oalh2MojUuk-unsplash.jpg" class="card-img-top"
-                        alt="...">
+                    <img src="../images/leon-Oalh2MojUuk-unsplash.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Metodologías</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
@@ -82,7 +98,7 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="../capacitacion-palopolo-romero/images/leon-6WR1FmbVbUE-unsplash.jpg" class="card-img-top"
+                    <img src="../images/leon-6WR1FmbVbUE-unsplash.jpg" class="card-img-top"
                         alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Herramientas</h5>
@@ -93,7 +109,7 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="../capacitacion-palopolo-romero/images/leon-vbxyFxlgpjM-unsplash.jpg" class="card-img-top"
+                    <img src="../images/leon-vbxyFxlgpjM-unsplash.jpg" class="card-img-top"
                         alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Ejemplos</h5>
@@ -131,17 +147,17 @@
             consectetur adipisicing elit. Dolorem quod atque aut vitae rem maiores amet fugit blanditiis soluta?</p>
         <br>
         <button class="btn btn-primary" type="button"><a href="pages/metodologias.html">EMPEZAR AHORA</a></button>
-
-    </div>
+    </div> 
+    <!-- Button trigger modal -->
     <footer class="footer">
         <!--<p class="footer__parrafo">Esto es una pagina para capacitación interna</p>
         <p class="footer__ayuda">¿Necesitás ayuda? <a href="pages/contacto.html">Contáctanos</a></p>
         -->
         <p>Esto es una pagina para capacitación interna</p>
-        <p class="footer__ayuda">¿Necesitás ayuda? <a href="pages/contacto.html">Contáctanos</a></p>
-
+        <a class="footer__ayuda" data-bs-toggle="modal" data-bs-target="#exampleModal">¿Necesitás ayuda?</a>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 </body>
 
 </html>
