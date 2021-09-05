@@ -95,7 +95,7 @@ body {
     align-self: center;
 }
 
-.portada.pmetodologias {
+.portada.metodologias {
     background-image: url(../images/leon-Oalh2MojUuk-unsplash.jpg);
     background-position: top;
 }
@@ -112,7 +112,7 @@ body {
 
 .intro-porque {
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     background-color: #EDEDED;
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
@@ -142,26 +142,10 @@ body {
 }
 
 .intro-porque a {
-    /*color:#0e0e0e;*/
     font-size: 30px;
     font-weight: bold;
     text-decoration: none;
-    /*animation-duration: 3s;
-    animation-name: empezar;
-    animation-duration: 3s;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;*/
 }
-
-/*
-@keyframes empezar {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}*/
 
 p {
     color:#0e0e0e;
@@ -169,72 +153,7 @@ p {
     line-height: 1.5;
     text-align: center;
 }
-/*
-.cards {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    text-align: center;
-    padding: 20px;
-}
 
-.card {
-    width: 350px;
-    height: 350px;
-    padding: 0px;
-    margin: 5px;
-    background-color: #EDEDED;
-    border-radius: 2px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-    display: grid;
-    grid-template-rows: 30% 10% 60%;
-}
-
-.card:hover {
-    transition-duration: .4s;
-    transform: scale(1.1,1.1);
-}
-
-.card__titulo {
-    text-transform: uppercase;
-    color: #0e0e0e;
-    text-decoration: none;
-    font-size: 20px;
-    background-color: #FF913D;
-}
-
-.card__titulos {
-    margin-top: 5%;
-    text-transform: uppercase;
-}
-
-.card__titulo.card-metodologia {
-    background-image: url(../images/leon-Oalh2MojUuk-unsplash.jpg);
-    background-size: cover;
-    background-position: 75% 2 5%;
-}
-
-.card__titulo.card-herramientas {
-    background-image: url(../images/leon-6WR1FmbVbUE-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.card__titulo.card-ejemplos {
-    background-image: url(../images/leon-vbxyFxlgpjM-unsplash.jpg);
-    background-size: cover;
-    background-position: top;
-}
-
-.card__parrafo {
-    padding: 10px;
-    color: #0e0e0e;
-    text-decoration: none;
-    font-size: 15px;
-}
-*/
 .metodologias {
     padding: 5%;
     display: grid;   
