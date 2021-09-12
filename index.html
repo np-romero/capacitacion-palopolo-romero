@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Capacitación Interna</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="icon" type="image/png" href="./images/favicon.png" />
@@ -21,7 +22,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Esta és una página de capacitación interna para los colaboradores de la empresa. Si tienes alguna duda, escríbenos desde nuestro <a href="./pages/contacto.html">Formulario de Contacto</a>
+                    Esta es una página de capacitación interna para los colaboradores de la empresa. Si tienes alguna duda, escríbenos desde nuestro <a href="./pages/contacto.html">Formulario de Contacto</a>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendí</button>
@@ -30,10 +31,9 @@
         </div>
     </div>
     <header id="header" class="header">
-    <!-- Menu con Boostrap-->
         <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Perfit</a>
+                <a class="navbar-brand" href="#">Nico</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -62,48 +62,50 @@
         </nav>
     </header>
     <div class="portada">
-        <h1 class="portada__titulo">¿Las tareas se acumulan?</h1>
+        <h1 class="portada__titulo animate__animated animate__fadeIn">¿Se acumulan las tareas?</h1>
     </div>
     <div class="intro-porque">
-        <h2 class="intro-porque__titulo">Planificar tus actividades te puede ayudar</h2>
-        <p class="intro-porque_parrafo">El objetivo de este sítio es brindar herramientas que permitan mejorar la ejecución de tareas y actividades. Planificar es clave para entender prioridades, ahorrar tiempo a futuro y evitar el stress. Espero que te sea útil y aguardamos tu feedback 🤗 </p>
+        <h2 class="intro-porque__titulo">Planificar te puede ayudar</h2>
+        <p class="intro-porque_parrafo">El objetivo de este sítio es brindar herramientas que permitan mejorar la ejecución de tareas y actividades.<br> Planificar es clave para entender prioridades, ahorrar tiempo a futuro y evitar el stress.</p>
+        <p>Navega por el contenido haciendo click sobre las cards</p>
     </div>
     <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
             <div class="col">
                 <div class="card">
-                    <img src="images/leon-Oalh2MojUuk-unsplash.jpg" class="card-img-top" alt="...">
+                    <a href="./pages/metodologias.html"><img src="images/leon-Oalh2MojUuk-unsplash.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Metodologías</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Te presentamos formas fáciles de organizar tus tareas. En videos cortos vas a conocer más sobre la metodología Kanban, FODA y otras.</p>
+                    </a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="images/leon-6WR1FmbVbUE-unsplash.jpg" class="card-img-top" alt="...">
+                    <a href="./pages/herramientas.html"><img src="images/leon-6WR1FmbVbUE-unsplash.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Herramientas</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Utiliza aplicaciones gratuitas disponibles en internet. Te recomendamos tres especiales: Trello, Notion y Evernote.</p>
+                    </a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="images/leon-vbxyFxlgpjM-unsplash.jpg" class="card-img-top" alt="...">
+                    <a href="./pages/ejemplos.html"><img src="images/leon-vbxyFxlgpjM-unsplash.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Ejemplos</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Tareas diarias, proyectos en equipo o las tan deseadas vacaciones. Mirá algunos casos de uso de la planificación.</p>
+                    </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="intro-porque como-funciona">
-        <h2 class="intro-porque__titulo ">¿Cómo funciona esto?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quod atque aut vitae rem maiores amet fugit blanditiis soluta?</p>
-        <br>
-        <button class="btn btn-primary" type="button"><a href="pages/metodologias.html">EMPEZAR AHORA</a></button>
+    <div class="intro-porque">
+        <h2 class="intro-porque__titulo ">¿Por qué debo organizar mis tareas?</h2>
+        <p class="intro-porque_parrafo">Es muy probable que en algún momento de tu vida te hayas encontrado frente a un objetivo que no puede ser alcanzado de forma inmediata. Desde ordenar la casa hasta la compra de algo caro, por ejemplo. En estos casos tenemos que pensar por donde empezar y por donde seguir. <br><strong>¡Esto es planificación!</strong></p>
     </div>
 
     <footer class="footer">

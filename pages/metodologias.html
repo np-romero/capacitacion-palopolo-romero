@@ -6,63 +6,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capacitación - Metodologías</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
     <link rel="icon" type="image/png" href="../images/favicon.png" />
 </head>
 
 <body>
-    <header>
-        <img class="imagen-logo" src="../images/logo-example1.png" alt="Aqui logo">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Hola!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Esta és una página de capacitación interna para los colaboradores de la empresa. Si tienes alguna
+                    duda, escríbenos desde nuestro <a href="./pages/contacto.html">Formulario de Contacto</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendí</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header id="header" class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Nico</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Metodologías</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="herramientas.html">Herramientas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ejemplos.html">Ejemplos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <nav class="menu">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="#" class="menu__activa">Metodologías</a></li>
-            <li><a href="herramientas.html">Herramientas</a></li>
-            <li><a href="ejemplos.html">Ejemplos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
     <div class="portada metodologias">
-        <h1 class="portada__titulo">¿Por dónde empezar?</h1>
+        <h1 class="portada__titulo animate__animated animate__fadeIn">¿Por dónde empezar?</h1>
     </div>
     <div class="intro-porque">
-        <h2 class="intro-porque__titulo">Planifica sin complicaciones</h2>
-        <p class="intro-porque_parrafo">Organizar nuestras actividades puede ser fácil si adoptamos la metodologia correcta. En esta sección te mostraremos en pocos pasos como empezar a planificar tus tareas.</p>
+        <h2 class="intro-porque__titulo">Utiliza metodologías de planificación</h2>
+        <p class="intro-porque_parrafo">En esta sección te presentamos tres formas simples de organizar tus tareas y planificar tus objetivos. <br>Para que puedas empezar desde ya, iniciamos mostrándote la metodología Kanban. </p>
+        <p><strong>Espero que te guste!</strong></p>
     </div>
-    <div class="metodologias">
-        <div class="metodologias__videos">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/qJRbAXlhJ3c"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay lipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
+    <div class="metodologias container">
+        <div class="row">
+            <div class="col-md ratio ratio-16x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qJRbAXlhJ3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-md metodologias__descripcion">
+                <h3 class="metodologias__descripcion-titulo">¿Qué es Kanban?</h3>
+                <p class="metodologias__descripcion-p">La metodología Kanban es un método visual que se utiliza para controlar las tareas a través de su división por fases hasta su finalización. A día de estoy, este método ha pasado a formar parte de las conocidas como metodologías ágiles, las cuales tratan de gestionar el trabajo y adaptarlo a las condiciones de los proyectos.</p>
+                <br>
+                <h6>Fuente: <a href="https://revistadigital.inesem.es/gestion-empresarial/kanban-el-metodo-para-desarrollar-proyectos-de-exito" target="_blank">inesem.es</a></h6>
+            </div>
         </div>
-        <div class="metodologias__descripcion">
-            <h3 class="metodologias__descripcion-titulo">¿Qué es Kanban?</h3>
-            <p class="metodologias__descripcion-p">La metodología Kanban es un método visual que se utiliza para controlar las tareas a través de su división por fases hasta su finalización. A día de estoy, este método ha pasado a formar parte de las conocidas como metodologías ágiles, las cuales tratan de gestionar el trabajo y adaptarlo a las condiciones de los proyectos. Fuente: <a href="https://revistadigital.inesem.es/gestion-empresarial/kanban-el-metodo-para-desarrollar-proyectos-de-exito/>inesem.es">inesem.es</a></p>
+    </div>
+        <div class="intro-porque">
+            <h2 class="intro-porque__titulo">Analiza los riesgos de tus proyectos</h2>
+            <p class="intro-porque_parrafo">Algunas veces nos deparamos con proyectos que sufren influencias externas. <br> Es una oportunidad para analizar con atención cada una de las etapas de nuestras actividades </p>
+        </div>
+        <div class="metodologias container">
+            <div class="row">
+                <div class="col-md metodologias-2__descripcion">
+                    <h3 class="metodologias__descripcion-titulo">¿Qué es matriz FODA?</h3>
+                    <p class="metodologias__descripcion-p">El análisis FODA (Fortalezas, Oportunidades, Debilidades, Amenazas), también conocido como análisis DAFO, es una herramienta de estudio de la situación de una empresa, institución, proyecto o persona, analizando sus características internas y su situación externa en una matriz cuadrada.</p>
+                    <br>
+                     <h6>Fuente: <a href="https://es.wikipedia.org/wiki/An%C3%A1lisis_FODA" target="_blank">Wikipedia</a></h6>
+                </div>
+                <div class="col-md ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/hQOiCjwKkQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
         </div>
     </div>
     <div class="intro-porque">
-        <h2 class="intro-porque__titulo">Analiza los riesgos de tus proyectos</h2>
-        <p class="intro-porque_parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil corrupti doloremque deserunt nesciunt quod id? </p>
+        <h2 class="intro-porque__titulo">Avanza con una planificación estratégica </h2>
+        <p class="intro-porque_parrafo">Siempre es posible mejorar la organización de nuestros proyectos  con una mirada más detallada.</p>
     </div>
-    <div class="metodologias-2">
-        <div class="metodologias-2__videos">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/hQOiCjwKkQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"              allowfullscreen></iframe>
+    <div class="metodologias container">
+        <div class="row">
+            <div class="col-md ratio ratio-16x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/i1Le5GYkBT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-md metodologias__descripcion">
+                <h3 class="metodologias__descripcion-titulo">¿Qué es Canvas?</h3>
+                <p class="metodologias__descripcion-p">Business Model Canvas, traducido como lienzo de modelo de negocio, es una plantilla de gestión estratégica para el desarrollo de nuevos modelos de negocio o documentar los ya existentes. Es un gráfico visual con elementos que describen propuestas de producto o de valor de la empresa, la infraestructura, los clientes y las finanzas.</p>
+                <br>
+                <h6>Fuente: <a
+                        href="https://es.m.wikipedia.org/wiki/Lienzo_de_modelo_de_negocio" target="_blank">Wikipedia.org</a>
+                </h6>
+            </div>
         </div>
-        <div class="metodologias-2__descripcion">
-            <h3 class="metodologias__descripcion-titulo">¿Qué es matriz FODA?</h3>
-            <p class="metodologias__descripcion-p">La sigla FODA (también conocida como DAFO o DOFA), significa "Fortalezas, Oportunidades, Debilidades y Amenazas". Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, libero!</p>
-        </div>
     </div>
-    <div class="complementar">
-        <p>Descarga aqui <a href="#">Material complementar</a> y acá podés hacer click para <a href="herramientas.html">seguir</a></p>
-    </div>
-    <footer class="footer">
-        <p class="footer__parrafo">Esto es una pagina para capacitación interna</p>
-        <p class="footer__ayuda">¿Necesitás ayuda? <a href="contacto.html">Contáctanos</a></p>
-    </footer>
+        <footer class="footer">
+            <!-- Button trigger modal -->
+            <p>Esto es una pagina para capacitación interna</p>
+            <a class="footer__ayuda" data-bs-toggle="modal" data-bs-target="#exampleModal">¿Necesitás ayuda?</a>
+        </footer>
+
+        <!-- SCRIPTS -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+            integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+            integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

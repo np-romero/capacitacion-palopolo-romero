@@ -6,78 +6,125 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capacitación - Contacto</title>
+    <link rel="stylesheet" href="../css/bootstrap.css" />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="icon" type="image/png" href="../images/favicon.png" />
 </head>
 
 <body>
-    <header>
-        <img class="imagen-logo" src="../images/logo-example1.png" alt="Aqui logo">
-    </header>
-    <nav class="menu">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="metodologias.html">Metodologías</a></li>
-            <li><a href="herramientas.html">Herramientas</a></li>
-            <li><a href="ejemplos.html">Ejemplos</a></li>
-            <li><a href="#" class="menu__activa">Contacto</a></li>
-        </ul>
-    </nav>
-    <div class="titulo--paginas">
-        <h1>Queremos saber tu opinión</h1>
-        <p>Utiliza este formulario para contarnos que te pareció esta página</p>
+    <!-- Modal -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Hola!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Esta es una página de capacitación interna para los colaboradores de la empresa. Si encontraste algún error o no pudiste contactarte por el formulario, escribe a <a href="mailto:nicolasgpromero@gmail.com">nicolasgpromero@gmail.com</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendí</button>
+            </div>
+        </div>
     </div>
-    <form class="formulario" action="" method="POST" enctype="text/plain">
-        <fieldset class="formulario__email">
-            <legend>Formulario para Contacto</legend>
-            <div>
-                <label>Email</label>
-                <input type="email" name="email" placeholder="tu email">
+</div>
+<header id="header" class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Nico</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="metodologias.html">Metodologías</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="herramientas.html">Herramientas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ejemplos.html">Ejemplos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Contacto</a>
+                    </li>
+                </ul>
             </div>
-            <div>
-                <label>Nombre</label>
-                <input type="text" name="nombre" placeholder="tu nombre">
+        </div>
+    </nav>
+</header>
+    <div class="container formulario__titulo">
+        <h4>¡Escríbenos, queremos leerte!</h4>
+    </div>
+    <div class="container formulario">
+        <form class="row g-3">
+            <div class="col-12">
+              <label for="inputEmail4" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="inputEmail4">
             </div>
-            <div>
-                <legend>Indicanos cual es tu área, por favor:</legend>
-                <select name="asunto">
-                    <option value="acquisition">Acquisition</option>
-                    <option value="expansion">Expansion</option>
-                    <option value="product">Product</option>
-                    <option value="other">Otro</option>
-                </select>
+            <div class="col-12">
+              <label class="form-label">Nombre:</label>
+              <input type="text" class="form-control" id="inputName">
             </div>
-        </fieldset>
-        <fieldset class="formulario__email">
-            <div>
-                <p>¿Te pareció útil esta página?</p>
-                <label>🤩</label>
-                <input type="radio" name="opinion" value="4">
-                <label>😀</label>
-                <input type="radio" name="opinion" value="3">
-                <label>😐</label>
-                <input type="radio" name="opinion" value="2">
-                <label>🙁</label>
-                <input type="radio" name="opinion" value="1">
-                <div>
-                    <div>
-                        <br>
-                        <label for="Contacto">Dejanos tu comentario o mensaje aquí:</label>
-                        <textarea rows="5" cols=10 name="Contacto"></textarea>
-                    </div>
-                    <div>
-                        <input type="submit" value="Enviar" />
-                        <input type="reset" value="Limpiar" />
-                    </div>
-        </fieldset>
-        <hr>
-    </form>
-    </section>
+            <div class="col-12">
+                <label for="exampleFormControlTextarea1" class="form-label">Déjanos aquí tu comentário o consulta:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <div class="col-12">
+                <label class="form-label">¿Qué te pareció este sítio web?</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    🤩 Excelente 
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    😀 Buena 
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    😐 Más o menos 
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    😣 Mala
+                </label>
+              </div>
+            </div>
+            <br>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">ENVIAR</button>
+            </div>
+          </form>
+    </div>
+
     <footer class="footer">
-        <p class="footer__parrafo">Esto es una pagina para capacitación interna</p>
-        <p class="footer__ayuda">¿Encontraste algún error? Escribenos a <a
-                href="mailto:ayuda@ejemplo.com">ayuda@ejemplo.com</a></p>
+        <!-- Button trigger modal -->
+        <p>Esto es una pagina para capacitación interna</p>
+        <a class="footer__ayuda" data-bs-toggle="modal" data-bs-target="#exampleModal">¿Necesitás ayuda?</a>
     </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

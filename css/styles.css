@@ -13,11 +13,26 @@
     --color-secundario: #FF913D;
     --color-font: #FFFFFF;
     --color-font-s: #0e0e0e;
+    --color-font-h: #575757;
 }
 
 body {
     font-family: 'Noto Sans', sans-serif;
     background-color: var(--bg-color);
+}
+
+a {
+    color: var(--color-font-s);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-font-h);
+}
+  
+  a:not([href]):not([class]), a:not([href]):not([class]):hover {
+    color: inherit;
+    text-decoration: none;
 }
 
 .header {
@@ -29,51 +44,10 @@ body {
     height: auto;
 }
 
-.imagen-logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50px;
-    height: 30px;
-}
-
-.menu ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    list-style-type: none;
-    background-color: var(--color-principal);
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 17px;
-    letter-spacing: 1.5px;
-}
-
-.menu li {
-    background-color: var(--color-principal);
-}
-
-.menu a {
-    display: flex;
-    padding: 10px;
-    color: var(--color-font);
-    font-weight: bold;
-    text-decoration: none;  
-}
-
-.menu__activa {
-    background-color: var(--color-secundario);
-}
-
-.menu li a:hover {
-    background-color: var(--color-secundario);
-    transition-duration: .4s;
-}
-
 .portada {
     width: auto;
     height: 410px;
-    padding: 20px;
+    padding: 5%;
     background-image: url(../images/tim-gouw-1K9T5YiZ2WU-unsplash.jpg);
     background-size: cover;
     background-position: center;
@@ -118,15 +92,10 @@ body {
     text-align: center;
 }
 
-.intro-porque.como-funciona {
-    margin-bottom: 0px;
-}
-
 .intro-porque__titulo {
     margin-bottom: 20px;
     padding: 20px;
     color: var(--color-font-s);
-    font-size: 40px;
     font-weight: bold;
     text-align: center;
 }
@@ -155,7 +124,7 @@ p {
 }
 
 .metodologias {
-    padding: 5%;
+    padding: 3rem;
     display: grid;   
     grid-template-columns: 2fr 1 fr;
     grid-row-gap: 5%;
@@ -166,16 +135,17 @@ p {
 .metodologias__videos {
     grid-area: mvideos__1;
     text-align: center;
-    padding: 20px;
+    padding-right: 3rem;
+    padding-left: 3rem;
 }
 
 .metodologias__descripcion {
     grid-area: mdescripcion__1;
     align-self: center;
+    margin-left: 2rem;
 }
 
 .metodologias-2 {
-    padding: 5%;
     display: grid;   
     grid-template-columns: 1fr 2 fr;
     grid-row-gap: 5%;
@@ -192,6 +162,7 @@ p {
 .metodologias-2__descripcion {
     grid-area: mdescripcion__2;
     align-self: center;
+    margin-right: 2rem;
 }
 
 .metodologias__descripcion-titulo {
@@ -204,47 +175,9 @@ p {
     color:#0e0e0e;
 }
 
-.slides {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 12px;
-    grid-template-areas: 
-    'slide__1 slide__2 slide__3';
-        
-}
-
-.slides__titulo {
+.intro-slides {
     text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.slides__imagenes {
-    width: 300px;
-    height: auto;
-    padding: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-.slides__referencias {
-    font-size: 10px;
-    color: #0e0e0e;
-    font-style: italic;
-}
-
-.slides__trello {
-    grid-area: slide__1;
-}
-
-.slides__trello2 {
-    grid-area: slide__2;
-}
-
-.slides__trello3 {
-    grid-area: slide__3;
+    margin-bottom: 50px;
 }
 
 .grid-ejemplos {
@@ -281,12 +214,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-}
-
-.ejemplo__complementar {
-    grid-area: box__4;
-    padding: 10px;
-    clear: both;
 }
 
 .ejemplo__imagen {
@@ -327,28 +254,6 @@ p {
     text-transform: uppercase;
 }
 
-.ejemplos__articulo {
-    text-align: left;
-}
-
-.ejemplos__imagenes {
-
-    width: 250px;
-    height: 300px;
-    padding: 20px;
-}
-
-.complementar {
-    clear: both;
-}
-
-.subir {
-    color:#0e0e0e;
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
 .footer {
     width: 100%;
     height: auto;
@@ -361,25 +266,17 @@ p {
     background-color: var(--color-secundario);
 }
 
-.footer__parrafo {
-
-    font-size: 18px;
-    text-align: left;
-    display: inline-block;
-}
-
 .footer__ayuda {
     margin-left: auto;
     cursor: pointer;
 }
 
 .formulario {
-    font-size: 20px;
-    display: block;
-    padding: 20px;
-    text-align: center;
+    padding-left: 20rem;
+    padding-right: 20rem;
 }
 
-.formulario__email {
-    display: inline;
+.formulario__titulo {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }

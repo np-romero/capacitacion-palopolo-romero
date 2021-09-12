@@ -47,7 +47,7 @@
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-rgb: 33, 37, 41;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: system-ui, -apple-system, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -72,7 +72,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  /*font-family: var(--bs-body-font-family);*/
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -162,6 +162,8 @@ p {
   margin-top: 0;
 }
 
+
+
 abbr[title],
 abbr[data-bs-original-title] {
   -webkit-text-decoration: underline dotted;
@@ -237,19 +239,6 @@ sub {
 
 sup {
   top: -0.5em;
-}
-
-a {
-  color: #FFFFFF;
-  text-decoration: underline;
-}
-a:hover {
-  color: #FFFFFF;
-}
-
-a:not([href]):not([class]), a:not([href]):not([class]):hover {
-  color: inherit;
-  text-decoration: none;
 }
 
 pre,
@@ -640,6 +629,8 @@ progress {
   margin-right: auto;
   margin-left: auto;
   align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: 576px) {
@@ -2153,6 +2144,10 @@ progress {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+}
+
+form {
+  margin-bottom: 3rem;
 }
 .form-label {
   margin-bottom: 0.5rem;
@@ -3897,6 +3892,8 @@ textarea.form-control-lg {
     transition: none;
   }
 }
+
+
 .nav-link:hover, .nav-link:focus {
   color: #0a58ca;
 }
@@ -4491,6 +4488,7 @@ textarea.form-control-lg {
 }
 
 .card-body {
+  background-color: #EDEDED ;
   flex: 1 1 auto;
   padding: 1rem 1rem;
 }
@@ -4575,7 +4573,7 @@ textarea.form-control-lg {
 
 .card:hover {
   transition-duration: .4s;
-  transform: scale(1.05,1.05);
+  transform: translate(0px, -15px);
 }
 
 .card-group > .card {
@@ -5949,7 +5947,11 @@ textarea.form-control-lg {
 }
 
 .carousel {
+  margin-top: 5rem;
   position: relative;
+  width: 800px;
+  align-items: center; 
+  justify-content: center;
 }
 
 .carousel.pointer-event {
@@ -5975,7 +5977,7 @@ textarea.form-control-lg {
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  transition: transform 0.6s ease-in-out;
+  transition: transform 0.8s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
@@ -6278,6 +6280,7 @@ textarea.form-control-lg {
 .offcanvas-title {
   margin-bottom: 0;
   line-height: 1.5;
+  font-weight: bold;
 }
 
 .offcanvas-body {
