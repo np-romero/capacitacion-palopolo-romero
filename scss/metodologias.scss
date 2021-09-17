@@ -1,0 +1,55 @@
+.portada.metodologias {
+    background-image: url(../images/leon-Oalh2MojUuk-unsplash.jpg);
+}
+    
+.metodologias {
+    padding: 3rem;
+    display: grid;   
+    grid-template-columns: 2fr 1 fr;
+    grid-row-gap: 5%;
+    grid-template-areas:
+    'mvideos__1 mvideos__1 mdescripcion__1'
+}
+
+.metodologias__videos {
+    grid-area: mvideos__1;
+    text-align: center;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+.metodologias__descripcion {
+    grid-area: mdescripcion__1;
+    align-self: center;
+    margin-left: 2rem;
+}
+
+.metodologias-2 {
+    display: grid;   
+    grid-template-columns: 1fr 2 fr;
+    grid-row-gap: 5%;
+    grid-template-areas:
+    'mdescripcion__2 mvideos__2 mvideos__2'
+}
+
+.metodologias-2__videos {
+    grid-area: mvideos__2;
+    text-align: center;
+    padding: 20px;
+}
+
+.metodologias-2__descripcion {
+    grid-area: mdescripcion__2;
+    align-self: center;
+    margin-right: 2rem;
+}
+
+.metodologias__descripcion-titulo {
+    color: $color-secundario;
+}
+
+.metodologias__descripcion-p {
+    padding: auto;
+    text-align: left;
+    color:#0e0e0e;
+}

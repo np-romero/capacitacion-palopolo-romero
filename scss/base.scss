@@ -1,0 +1,123 @@
+$bg-color: #FFFFFF;
+$color-principal: #009EB3;
+$color-secundario: #FF913D;
+$color-font: #FFFFFF;
+$color-font-s: #0e0e0e;
+$color-font-h: #575757;
+
+* { margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;}
+
+body {background-color: $bg-color;}
+
+.header {
+    background-color: $bg-color;
+    float: relative;
+    padding: 0; 
+    margin-bottom: 0px;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: $color-font-s;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $color-font-h;
+}
+  
+  a:not([href]):not([class]), a:not([href]):not([class]):hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    color:#0e0e0e;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.portada {
+    width: auto;
+    height: 410px;
+    padding: 5%;
+    background-image: url(../images/tim-gouw-1K9T5YiZ2WU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position: top;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 75% 25%;
+}
+
+.portada__titulo {
+    margin-left: 10%;
+    padding: 10px;
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: $color-font;
+    text-shadow: 3px 3px 0px #0e0e0e;
+    background-color: transparent;
+    align-self: center;
+}
+
+.intro-porque {
+    padding: 20px;
+    margin-bottom: 0px;
+    background-color: #EDEDED;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+}
+
+.intro-porque__titulo {
+    margin-bottom: 20px;
+    padding: 20px;
+    color: $color-font-s;
+    font-weight: bold;
+    text-align: center;
+}
+
+.intro-porque_parrafo {
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color:#0e0e0e;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.intro-porque a {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.intro-slides {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 0;
+    font-size: 18px;
+    text-align: left;
+    color: $color-font-s;
+    display: flex;
+    background-color: $color-secundario;
+}
+
+.footer__ayuda {
+    margin-left: auto;
+    cursor: pointer;
+}   

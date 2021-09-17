@@ -1,0 +1,77 @@
+.portada.ejemplos {
+    background-image: url(../images/leon-vbxyFxlgpjM-unsplash.jpg);
+}
+
+.grid-ejemplos {
+    padding: 5%;
+    display: grid;   
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 2fr 1fr;
+    grid-row-gap: 5%;
+    grid-template-areas:
+    'box__1 box__1 box__3'
+    'box__2 box__2 box__3'
+    'box__4 box__4 box__4';  
+} 
+
+.ejemplo__1 {
+    grid-area: box__1;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+}
+
+.ejemplo__2 {
+    grid-area: box__2;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+}
+
+.ejemplo__extra {
+    grid-area: box__3;
+    margin-left: 10%;
+    padding: 20px;
+    background-color: #FFC163;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.ejemplo__imagen {
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    align-self: center;
+    grid-row: 1 / 4;
+}
+
+.ejemplo__descripcion {
+    grid-column-start: 2;
+    justify-content: center;
+    align-self: center;
+}
+
+.ejemplo__extra-titulo {
+    padding: 5px;
+    margin-bottom: 10%;
+    color: #0e0e0e ;
+    background-color: $color-font;
+    text-align: center;
+}
+
+.ejemplo__p {
+    padding: 20px;
+    text-align: left;
+}
+
+.ejemplo__extra-p {
+    padding: 0%;
+}
+
+.ejemplos__titulo {
+    padding: 20px;
+    text-align: left;
+    color: #2C9FE0;
+    text-transform: uppercase;
+}
