@@ -3,7 +3,7 @@ $color-principal: #009EB3;
 $color-secundario: #FF913D;
 $color-font: #FFFFFF;
 $color-font-s: #0e0e0e;
-$color-font-h: #575757;
+$color-font-h: #272727;
 
 * { margin: 0;
     padding: 0;
@@ -27,10 +27,11 @@ a {
 }
 
 a:hover {
-    color: $color-font-h;
+    color: $color-font-s;
 }
+
   
-  a:not([href]):not([class]), a:not([href]):not([class]):hover {
+a:not([href]):not([class]), a:not([href]):not([class]):hover {
     color: inherit;
     text-decoration: none;
 }
@@ -68,36 +69,26 @@ p {
     align-self: center;
 }
 
-.intro-porque {
+.intro-pagina {
     padding: 20px;
-    margin-bottom: 0px;
     background-color: #EDEDED;
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
-}
-
-.intro-porque__titulo {
+    color:$color-font-s;
+    .intro-pagina__titulo {
     margin-bottom: 20px;
     padding: 20px;
-    color: $color-font-s;
     font-weight: bold;
     text-align: center;
-}
-
-.intro-porque_parrafo {
+    .intro-pagina_parrafo {
     padding-bottom: 20px;
     padding-left: 30px;
     padding-right: 30px;
-    color:#0e0e0e;
     font-size: 18px;
     line-height: 1.5;
     text-align: center;
-}
-
-.intro-porque a {
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
+    }
+    }
 }
 
 .intro-slides {
@@ -115,9 +106,20 @@ p {
     color: $color-font-s;
     display: flex;
     background-color: $color-secundario;
+    align-items: center;
+    .footer__texto {
+        margin-bottom: 0px;
+        color:#0e0e0e;
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: center;
+    }
+    .footer__ayuda {
+        margin-left: auto;
+        cursor: pointer;
+    } 
 }
 
-.footer__ayuda {
-    margin-left: auto;
-    cursor: pointer;
-}   
+
+
+  

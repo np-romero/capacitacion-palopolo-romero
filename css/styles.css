@@ -21,7 +21,7 @@ a {
   text-decoration: none; }
 
 a:hover {
-  color: #575757; }
+  color: #0e0e0e; }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
   color: inherit;
@@ -57,33 +57,24 @@ p {
   background-color: transparent;
   align-self: center; }
 
-.intro-porque {
+.intro-pagina {
   padding: 20px;
-  margin-bottom: 0px;
   background-color: #EDEDED;
   font-family: 'Noto Sans', sans-serif;
-  text-align: center; }
-
-.intro-porque__titulo {
-  margin-bottom: 20px;
-  padding: 20px;
-  color: #0e0e0e;
-  font-weight: bold;
-  text-align: center; }
-
-.intro-porque_parrafo {
-  padding-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
-  color: #0e0e0e;
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center; }
-
-.intro-porque a {
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none; }
+  text-align: center;
+  color: #0e0e0e; }
+  .intro-pagina .intro-pagina__titulo {
+    margin-bottom: 20px;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center; }
+    .intro-pagina .intro-pagina__titulo .intro-pagina_parrafo {
+      padding-bottom: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 18px;
+      line-height: 1.5;
+      text-align: center; }
 
 .intro-slides {
   text-align: center;
@@ -98,11 +89,17 @@ p {
   text-align: left;
   color: #0e0e0e;
   display: flex;
-  background-color: #FF913D; }
-
-.footer__ayuda {
-  margin-left: auto;
-  cursor: pointer; }
+  background-color: #FF913D;
+  align-items: center; }
+  .footer .footer__texto {
+    margin-bottom: 0px;
+    color: #0e0e0e;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center; }
+  .footer .footer__ayuda {
+    margin-left: auto;
+    cursor: pointer; }
 
 .portada.metodologias {
   background-image: url(../images/leon-Oalh2MojUuk-unsplash.jpg); }
@@ -223,3 +220,10 @@ p {
 .formulario__titulo {
   margin-top: 2rem;
   margin-bottom: 2rem; }
+
+.cards {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .cards .card:hover {
+    transition-duration: .4s;
+    transform: translate(0px, -15px); }
