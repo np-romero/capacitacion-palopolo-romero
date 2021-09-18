@@ -70,14 +70,11 @@ p {
     line-height: 1.5;
     text-align: center; }
 
-.intro-slides {
-  text-align: center;
-  margin-bottom: 50px; }
-
 .footer {
   width: 100%;
   height: auto;
-  padding: 20px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
   margin-bottom: 0;
   font-size: 1rem;
   text-align: left;
@@ -101,52 +98,40 @@ p {
   .row {
     width: 80%; } }
 
+.cards {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .cards .card:hover {
+    transition-duration: .4s;
+    transform: translate(0px, -15px); }
+
 .portada.metodologias {
   background-image: url(../images/leon-Oalh2MojUuk-unsplash.jpg); }
 
 .metodologias {
-  padding: 3rem;
-  display: grid;
-  grid-template-columns: 2fr 1 fr;
-  grid-row-gap: 5%;
-  grid-template-areas: 'mvideos__1 mvideos__1 mdescripcion__1'; }
+  padding: 3rem; }
+  .metodologias .metodologias__descripcion {
+    align-self: center;
+    margin-right: 2rem;
+    padding-top: 1rem; }
+  .metodologias .metodologias__descripcion-titulo {
+    color: #FF913D; }
+  .metodologias .metodologias__descripcion-p {
+    padding: auto;
+    text-align: left;
+    color: #0e0e0e; }
 
-.metodologias__videos {
-  grid-area: mvideos__1;
-  text-align: center;
-  padding-right: 3rem;
-  padding-left: 3rem; }
-
-.metodologias__descripcion {
-  grid-area: mdescripcion__1;
-  align-self: center; }
-
-.metodologias-2 {
-  display: grid;
-  grid-template-columns: 1fr 2 fr;
-  grid-row-gap: 5%;
-  grid-template-areas: 'mdescripcion__2 mvideos__2 mvideos__2'; }
-
-.metodologias-2__videos {
-  grid-area: mvideos__2;
-  text-align: center;
-  padding: 20px; }
-
-.metodologias-2__descripcion {
-  grid-area: mdescripcion__2;
-  align-self: center;
-  margin-right: 2rem; }
-
-.metodologias__descripcion-titulo {
-  color: #FF913D; }
-
-.metodologias__descripcion-p {
-  padding: auto;
-  text-align: left;
-  color: #0e0e0e; }
+.body__tools {
+  background-color: #EDEDED; }
 
 .portada.herramientas {
   background-image: url(../images/leon-6WR1FmbVbUE-unsplash.jpg); }
+
+.tools {
+  background-color: #FFFFFF; }
+
+.footer__tools {
+  margin-top: 4rem; }
 
 .portada.ejemplos {
   background-image: url(../images/leon-vbxyFxlgpjM-unsplash.jpg); }
@@ -161,54 +146,23 @@ p {
     margin-bottom: 0px; }
   .ejemplos__post a {
     font-weight: bold; }
-
-.grid-ejemplos {
-  padding: 5%;
-  display: grid;
-  /*grid-template-columns: repeat(3, 1fr);*/
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  gap: 1rem;
-  grid-auto-rows: 15rem;
-  /*grid-row-gap: 5%;*/
-  grid-template-areas: 'box__1 box__4' 'box__2 box__4' 'box__3 box__4'; }
-
-.ejemplo__1 {
-  grid-area: box__1;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr; }
-
-.ejemplo__2 {
-  grid-area: box__2;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr; }
-
-.ejemplo__3 {
-  grid-area: box__3;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: 1fr; }
-
-.ejemplo__imagen {
-  width: 20rem;
-  height: auto;
-  margin-bottom: 1rem;
-  align-self: center;
-  grid-row: 1 / 4; }
-
-.ejemplo__descripcion {
-  grid-area: box__4;
-  grid-column-start: 2;
-  justify-content: center;
-  align-self: center; }
-
-.ejemplos__titulo {
-  padding: 1.5rem;
-  text-align: center;
-  color: #272727;
-  font-weight: bold;
-  text-transform: uppercase; }
+  .ejemplos__post .ejemplo__imagen {
+    width: 20rem;
+    height: auto;
+    margin-bottom: 1rem;
+    align-self: center;
+    grid-row: 1 / 4; }
+  .ejemplos__post .ejemplo__descripcion {
+    grid-area: box__4;
+    grid-column-start: 2;
+    justify-content: center;
+    align-self: center; }
+  .ejemplos__post .ejemplos__titulo {
+    padding: 1.5rem;
+    text-align: center;
+    color: #272727;
+    font-weight: bold;
+    text-transform: uppercase; }
 
 .formulario {
   margin-left: auto;
@@ -220,10 +174,3 @@ p {
 .formulario__titulo {
   margin-top: 2rem;
   margin-bottom: 2rem; }
-
-.cards {
-  margin-top: 50px;
-  margin-bottom: 50px; }
-  .cards .card:hover {
-    transition-duration: .4s;
-    transform: translate(0px, -15px); }

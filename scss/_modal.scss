@@ -119,6 +119,9 @@
   // when there should be a fixed height on `.modal-dialog`.
   flex: 1 1 auto;
   padding: $modal-inner-padding;
+  a {
+    font-weight: bold;
+  }
 }
 
 // Footer (for actions)

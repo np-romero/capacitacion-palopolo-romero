@@ -1,7 +1,6 @@
 .portada.ejemplos {
     background-image: url(../images/leon-vbxyFxlgpjM-unsplash.jpg);
 }
-
 .ejemplos__post {
     text-align: center;
     h6{
@@ -14,62 +13,25 @@
     a {
         font-weight: bold;
     }
-}
-
-.grid-ejemplos {
-    padding: 5%;
-    display: grid;   
-    /*grid-template-columns: repeat(3, 1fr);*/
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    gap: 1rem;
-    grid-auto-rows: 15rem;
-    /*grid-row-gap: 5%;*/
-    grid-template-areas:
-    'box__1 box__4'
-    'box__2 box__4'
-    'box__3 box__4';  
+    .ejemplo__imagen {
+        width: 20rem;
+        height: auto;
+        margin-bottom: 1rem;
+        align-self: center;
+        grid-row: 1 / 4;
+    }
+    .ejemplo__descripcion {
+        grid-area: box__4;
+        grid-column-start: 2;
+        justify-content: center;
+        align-self: center;
+    }
+    
+    .ejemplos__titulo {
+        padding: 1.5rem;
+        text-align: center;
+        color: $color-font-h;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
 } 
-
-.ejemplo__1 {
-    grid-area: box__1;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 1fr;
-}
-
-.ejemplo__2 {
-    grid-area: box__2;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 1fr;
-}
-
-.ejemplo__3 {
-    grid-area: box__3;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 1fr;
-}
-
-.ejemplo__imagen {
-    width: 20rem;
-    height: auto;
-    margin-bottom: 1rem;
-    align-self: center;
-    grid-row: 1 / 4;
-}
-
-.ejemplo__descripcion {
-    grid-area: box__4;
-    grid-column-start: 2;
-    justify-content: center;
-    align-self: center;
-}
-
-.ejemplos__titulo {
-    padding: 1.5rem;
-    text-align: center;
-    color: $color-font-h;
-    font-weight: bold;
-    text-transform: uppercase;
-}
