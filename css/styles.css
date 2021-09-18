@@ -16,10 +16,6 @@ body {
   width: 100%;
   height: auto; }
 
-a {
-  color: #0e0e0e;
-  text-decoration: none; }
-
 a:hover {
   color: #0e0e0e; }
 
@@ -44,18 +40,16 @@ p {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 75% 25%; }
-
-.portada__titulo {
-  margin-left: 10%;
-  padding: 10px;
-  font-size: 60px;
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  font-weight: bolder;
-  color: #FFFFFF;
-  text-shadow: 3px 3px 0px #0e0e0e;
-  background-color: transparent;
-  align-self: center; }
+  .portada .portada__titulo {
+    margin-left: 10%;
+    padding: 10px;
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #FFFFFF;
+    text-shadow: 3px 3px 0px #0e0e0e;
+    align-self: center; }
 
 .intro-pagina {
   padding: 20px;
