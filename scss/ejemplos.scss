@@ -2,16 +2,32 @@
     background-image: url(../images/leon-vbxyFxlgpjM-unsplash.jpg);
 }
 
+.ejemplos__post {
+    text-align: center;
+    h6{
+        padding: 1rem;
+        text-align: justify;
+        line-height: 1.5;
+        font-size: 1rem;
+        margin-bottom: 0px;
+    }
+    a {
+        font-weight: bold;
+    }
+}
+
 .grid-ejemplos {
     padding: 5%;
     display: grid;   
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2fr 2fr 1fr;
-    grid-row-gap: 5%;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1rem;
+    grid-auto-rows: 15rem;
+    /*grid-row-gap: 5%;*/
     grid-template-areas:
-    'box__1 box__1 box__3'
-    'box__2 box__2 box__3'
-    'box__4 box__4 box__4';  
+    'box__1 box__4'
+    'box__2 box__4'
+    'box__3 box__4';  
 } 
 
 .ejemplo__1 {
@@ -28,50 +44,32 @@
     grid-template-rows: 1fr;
 }
 
-.ejemplo__extra {
+.ejemplo__3 {
     grid-area: box__3;
-    margin-left: 10%;
-    padding: 20px;
-    background-color: #FFC163;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
 }
 
 .ejemplo__imagen {
-    width: 250px;
-    height: 200px;
-    padding: 10px;
+    width: 20rem;
+    height: auto;
+    margin-bottom: 1rem;
     align-self: center;
     grid-row: 1 / 4;
 }
 
 .ejemplo__descripcion {
+    grid-area: box__4;
     grid-column-start: 2;
     justify-content: center;
     align-self: center;
 }
 
-.ejemplo__extra-titulo {
-    padding: 5px;
-    margin-bottom: 10%;
-    color: #0e0e0e ;
-    background-color: $color-font;
-    text-align: center;
-}
-
-.ejemplo__p {
-    padding: 20px;
-    text-align: left;
-}
-
-.ejemplo__extra-p {
-    padding: 0%;
-}
-
 .ejemplos__titulo {
-    padding: 20px;
-    text-align: left;
-    color: #2C9FE0;
+    padding: 1.5rem;
+    text-align: center;
+    color: $color-font-h;
+    font-weight: bold;
     text-transform: uppercase;
 }
