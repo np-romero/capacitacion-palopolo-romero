@@ -25,7 +25,7 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
 
 p {
   color: #0e0e0e;
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.5;
   text-align: center; }
 
@@ -60,15 +60,16 @@ p {
   .intro-pagina .intro-pagina__titulo {
     margin-bottom: 20px;
     padding: 20px;
+    font-size: 1.8rem;
     font-weight: bold;
     text-align: center; }
-    .intro-pagina .intro-pagina__titulo .intro-pagina_parrafo {
-      padding-bottom: 20px;
-      padding-left: 30px;
-      padding-right: 30px;
-      font-size: 18px;
-      line-height: 1.5;
-      text-align: center; }
+  .intro-pagina p {
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center; }
 
 .intro-slides {
   text-align: center;
@@ -79,21 +80,27 @@ p {
   height: auto;
   padding: 20px;
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 1rem;
   text-align: left;
   color: #0e0e0e;
+  text-align: center;
   display: flex;
   background-color: #FF913D;
   align-items: center; }
   .footer .footer__texto {
-    margin-bottom: 0px;
+    margin-bottom: 0rem;
     color: #0e0e0e;
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: center; }
+    line-height: 1.5; }
   .footer .footer__ayuda {
     margin-left: auto;
     cursor: pointer; }
+
+@media (max-width: 576px) {
+  .portada .portada__titulo {
+    font-size: 45px;
+    text-align: left; }
+  .row {
+    width: 80%; } }
 
 .portada.metodologias {
   background-image: url(../images/leon-Oalh2MojUuk-unsplash.jpg); }
@@ -113,8 +120,7 @@ p {
 
 .metodologias__descripcion {
   grid-area: mdescripcion__1;
-  align-self: center;
-  margin-left: 2rem; }
+  align-self: center; }
 
 .metodologias-2 {
   display: grid;
@@ -208,8 +214,11 @@ p {
   text-transform: uppercase; }
 
 .formulario {
-  padding-left: 20rem;
-  padding-right: 20rem; }
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  background-color: #EDEDED;
+  padding: 1rem; }
 
 .formulario__titulo {
   margin-top: 2rem;

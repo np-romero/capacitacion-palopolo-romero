@@ -5,6 +5,7 @@ $color-font: #FFFFFF;
 $color-font-s: #0e0e0e;
 $color-font-h: #272727;
 
+
 * { margin: 0;
     padding: 0;
     text-decoration: none;
@@ -33,7 +34,7 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
 
 p {
     color:#0e0e0e;
-    font-size: 18px;
+    font-size: 1rem;
     line-height: 1.5;
     text-align: center;
 }
@@ -62,7 +63,6 @@ p {
     }
 }
 
-
 .intro-pagina {
     padding: 20px;
     background-color: #EDEDED;
@@ -72,17 +72,18 @@ p {
         .intro-pagina__titulo {
         margin-bottom: 20px;
         padding: 20px;
+        font-size: 1.8rem;
         font-weight: bold;
         text-align: center;
-        .intro-pagina_parrafo {
-        padding-bottom: 20px;
-        padding-left: 30px;
-        padding-right: 30px;
-        font-size: 18px;
-        line-height: 1.5;
-        text-align: center;
         }
-        }
+        p {
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            text-align: center;
+            }
 }
 
 .intro-slides {
@@ -95,24 +96,35 @@ p {
     height: auto;
     padding: 20px;
     margin-bottom: 0;
-    font-size: 18px;
+    font-size: 1rem;
     text-align: left;
     color: $color-font-s;
+    text-align: center;
     display: flex;
     background-color: $color-secundario;
     align-items: center;
     .footer__texto {
-        margin-bottom: 0px;
+        margin-bottom: 0rem;
         color:#0e0e0e;
-        font-size: 18px;
         line-height: 1.5;
-        text-align: center;
+        
     }
     .footer__ayuda {
         margin-left: auto;
         cursor: pointer;
     } 
 }
+
+@media (max-width: 576px) {
+    .portada .portada__titulo {
+        font-size: 45px;
+        text-align: left;
+        }
+    .row {
+        width: 80%;
+        }
+
+    }
 
 
 
