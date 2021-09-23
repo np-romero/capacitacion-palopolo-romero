@@ -42,7 +42,7 @@ p {
 
 .portada {
     width: auto;
-    height: 410px;
+    height: 31rem;
     padding: 5%;
     background-image: url(../images/tim-gouw-1K9T5YiZ2WU-unsplash.jpg);
     background-size: cover;
@@ -99,15 +99,16 @@ p {
     display: flex;
     background-color: $color-secundario;
     align-items: center;
-    .footer__texto {
+    p {
         margin-bottom: 0rem;
         color:#0e0e0e;
         line-height: 1.5;
         
     }
-    .footer__ayuda {
+    a {
         margin-left: auto;
         cursor: pointer;
+        font-weight: bold;
     } 
 }
 
