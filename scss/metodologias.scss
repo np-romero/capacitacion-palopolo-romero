@@ -16,6 +16,7 @@
     }
     h3 {
         color: $color-secundario;
+        font-weight: bold;
         padding-bottom: 1.3rem;
     } 
     p {
@@ -28,4 +29,12 @@
 
 .offcanvas-body p{
     text-align: left;
+}
+
+@media (max-width: 768px) {
+    .metodologias .metodologias__descripcion {
+        align-self: center;
+        margin-right: 3rem;
+        margin-left: 0rem;
+    }    
 }

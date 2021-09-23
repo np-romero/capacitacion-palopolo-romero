@@ -7935,6 +7935,7 @@ p {
     margin-left: 0rem; }
   .metodologias h3, .metodologias .h3 {
     color: #FF913D;
+    font-weight: bold;
     padding-bottom: 1.3rem; }
   .metodologias p {
     padding: auto;
@@ -7944,6 +7945,12 @@ p {
 
 .offcanvas-body p {
   text-align: left; }
+
+@media (max-width: 768px) {
+  .metodologias .metodologias__descripcion {
+    align-self: center;
+    margin-right: 3rem;
+    margin-left: 0rem; } }
 
 .body__tools {
   background-color: #EDEDED; }
