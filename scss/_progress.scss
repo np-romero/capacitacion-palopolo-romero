@@ -12,10 +12,15 @@
   display: flex;
   height: $progress-height;
   overflow: hidden; // force rounded corners by cropping it
-  @include font-size($progress-font-size);
   background-color: $progress-bg;
+  @include font-size($progress-font-size);
   @include border-radius($progress-border-radius);
   @include box-shadow($progress-box-shadow);
+  /* EDICIONES MIAS */
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
 }
 
 .progress-bar {
@@ -26,7 +31,7 @@
   color: $progress-bar-color;
   text-align: center;
   white-space: nowrap;
-  background-color: $progress-bar-bg;
+  background-color: #009EB3;
   @include transition($progress-bar-transition);
 }
 

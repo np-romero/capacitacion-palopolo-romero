@@ -3384,7 +3384,10 @@ textarea.form-control-lg {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem; }
+  border-radius: 0.25rem;
+  /* EDICIONES MIAS */
+  margin-left: 0.8rem;
+  margin-right: 0.8rem; }
   .card > hr {
     margin-right: 0;
     margin-left: 0; }
@@ -3781,15 +3784,20 @@ textarea.form-control-lg {
 
 @keyframes progress-bar-stripes {
   0% {
-    background-position-x: 1rem; } }
+    background-position-x: 1.4rem; } }
 
 .progress {
   display: flex;
-  height: 1rem;
+  height: 1.4rem;
   overflow: hidden;
-  font-size: 0.75rem;
   background-color: #e9ecef;
-  border-radius: 0.25rem; }
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+  /* EDICIONES MIAS */
+  margin-left: 8rem;
+  margin-right: 8rem;
+  margin-bottom: 3rem;
+  margin-top: 1rem; }
 
 .progress-bar {
   display: flex;
@@ -3799,7 +3807,7 @@ textarea.form-control-lg {
   color: #fff;
   text-align: center;
   white-space: nowrap;
-  background-color: #0d6efd;
+  background-color: #009EB3;
   transition: width 0.6s ease; }
   @media (prefers-reduced-motion: reduce) {
     .progress-bar {
@@ -3807,7 +3815,7 @@ textarea.form-control-lg {
 
 .progress-bar-striped {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-size: 1rem 1rem; }
+  background-size: 1.4rem 1.4rem; }
 
 .progress-bar-animated {
   animation: 1s linear infinite progress-bar-stripes; }
@@ -7853,10 +7861,10 @@ p {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 75% 25%; }
-  .portada .portada__titulo {
+  .portada h1, .portada .h1 {
     margin-left: 10%;
-    padding: 10px;
-    font-size: 60px;
+    padding: 1rem;
+    font-size: 4rem;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight: bolder;
@@ -7865,23 +7873,24 @@ p {
     align-self: center; }
 
 .intro-pagina {
-  padding: 20px;
-  background-color: #EDEDED;
+  padding-top: 1.2rem;
+  padding-bottom: 2.4rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
+  background-color: #e4e3e3;
   font-family: 'Noto Sans', sans-serif;
   text-align: center;
   color: #0e0e0e; }
-  .intro-pagina .intro-pagina__titulo {
-    margin-bottom: 20px;
-    padding: 20px;
+  .intro-pagina h2, .intro-pagina .h2 {
+    padding: 1.2rem;
     font-size: 1.8rem;
     font-weight: bold;
     text-align: center; }
   .intro-pagina p {
-    padding-left: 30px;
-    padding-right: 30px;
     font-size: 1.2rem;
     line-height: 1.5;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 0rem; }
 
 .footer {
   width: 100%;
@@ -7905,19 +7914,35 @@ p {
     cursor: pointer;
     font-weight: bold; }
 
+@media (max-width: 1200px) {
+  .intro-pagina {
+    padding-left: 8rem;
+    padding-right: 8rem; } }
+
+@media (max-width: 992px) {
+  .portada h1, .portada .h1 {
+    font-size: 3.5rem;
+    text-align: left; }
+  .intro-pagina {
+    padding-left: 6rem;
+    padding-right: 6rem; } }
+
 @media (max-width: 576px) {
-  .portada .portada__titulo {
-    font-size: 45px;
+  .portada h1, .portada .h1 {
+    font-size: 2.8rem;
     text-align: left; }
   .row {
-    width: 80%; } }
+    width: 80%; }
+  .intro-pagina {
+    padding-left: 4rem;
+    padding-right: 4rem; } }
 
 .cards {
-  margin-top: 50px;
-  margin-bottom: 50px; }
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
   .cards .card:hover {
     transition-duration: .4s;
-    transform: translate(0px, -15px); }
+    transform: translate(0rem, -1rem); }
 
 .portada.metodologias {
   background-image: url(../images/leon-Oalh2MojUuk-unsplash.jpg); }
@@ -7953,7 +7978,7 @@ p {
     margin-left: 0rem; } }
 
 .body__tools {
-  background-color: #EDEDED; }
+  background-color: #e4e3e3; }
 
 .portada.herramientas {
   background-image: url(../images/leon-6WR1FmbVbUE-unsplash.jpg); }

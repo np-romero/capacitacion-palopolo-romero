@@ -1,7 +1,7 @@
 $bg-color: #FFFFFF;
 $color-principal: #009EB3;
 $color-secundario: #FF913D;
-$color-intro: #EDEDED;
+$color-intro: #e4e3e3;
 $color-font: #FFFFFF;
 $color-font-s: #0e0e0e;
 $color-font-h: #272727;
@@ -51,10 +51,10 @@ p {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 75% 25%;
-    .portada__titulo {
+    h1 {
         margin-left: 10%;
-        padding: 10px;
-        font-size: 60px;
+        padding: 1rem;
+        font-size: 4rem;
         font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
         font-weight: bolder;
@@ -65,24 +65,25 @@ p {
 }
 
 .intro-pagina {
-    padding: 20px;
+    padding-top: 1.2rem;
+    padding-bottom: 2.4rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
     background-color: $color-intro;
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
     color:$color-font-s;
-        .intro-pagina__titulo {
-        margin-bottom: 20px;
-        padding: 20px;
+        h2 {
+        padding: 1.2rem;
         font-size: 1.8rem;
         font-weight: bold;
         text-align: center;
         }
-        p {
-            padding-left: 30px;
-            padding-right: 30px;
+        p {            
             font-size: 1.2rem;
             line-height: 1.5;
             text-align: center;
+            margin-bottom: 0rem;
             }
 }
 
@@ -112,13 +113,36 @@ p {
     } 
 }
 
+@media (max-width: 1200px) {
+    .intro-pagina {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .portada h1 {
+        font-size: 3.5rem;
+        text-align: left;
+        }
+    .intro-pagina {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    
+}
+
 @media (max-width: 576px) {
-    .portada .portada__titulo {
-        font-size: 45px;
+    .portada h1 {
+        font-size: 2.8rem;
         text-align: left;
         }
     .row {
         width: 80%;
+        }
+    .intro-pagina {
+        padding-left: 4rem;
+        padding-right: 4rem;
         }
     }
 
