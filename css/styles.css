@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap");
 /*!
@@ -3794,10 +3795,7 @@ textarea.form-control-lg {
   font-size: 0.75rem;
   border-radius: 0.25rem;
   /* EDICIONES MIAS */
-  margin-left: 8rem;
-  margin-right: 8rem;
-  margin-bottom: 3rem;
-  margin-top: 1rem; }
+  margin: 3rem 17.7rem 3rem 17.7rem; }
 
 .progress-bar {
   display: flex;
@@ -3812,6 +3810,10 @@ textarea.form-control-lg {
   @media (prefers-reduced-motion: reduce) {
     .progress-bar {
       transition: none; } }
+
+/* EDICIÓN MIA */
+.progress-bar.completa {
+  background-color: #FF913D; }
 
 .progress-bar-striped {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -7873,10 +7875,7 @@ p {
     align-self: center; }
 
 .intro-pagina {
-  padding-top: 1.2rem;
-  padding-bottom: 2.4rem;
-  padding-left: 12rem;
-  padding-right: 12rem;
+  padding: 1.2rem 12rem 2.4rem 12rem;
   background-color: #e4e3e3;
   font-family: 'Noto Sans', sans-serif;
   text-align: center;
@@ -7892,14 +7891,63 @@ p {
     text-align: center;
     margin-bottom: 0rem; }
 
+.avanzar {
+  display: flex;
+  flex-direction: column; }
+  .avanzar a {
+    background-color: #009EB3;
+    color: #FFFFFF;
+    padding: .8rem;
+    border-radius: .1rem; }
+  .avanzar a:hover {
+    background-color: #018394; }
+  .avanzar p {
+    font-size: .9rem;
+    margin-bottom: 1rem; }
+  .avanzar button {
+    background-color: #009EB3;
+    color: #FFFFFF;
+    padding: .8rem;
+    border-radius: .1rem; }
+
+.avanzar.pages {
+  flex-direction: row;
+  justify-content: space-around; }
+  .avanzar.pages .boton {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .avanzar.pages .volver-inicio {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+
+.progress__avanzar {
+  background-color: #e4e3e3;
+  padding: 2rem; }
+  .progress__avanzar h6, .progress__avanzar .h6 {
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 2rem; }
+  .progress__avanzar .felicitaciones {
+    font-weight: 200;
+    font-size: 1.3rem;
+    line-height: 3rem; }
+
+.progress__avanzar-blanca {
+  background-color: #FFFFFF;
+  padding: 2rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+  margin-top: 0rem;
+  text-align: center; }
+  .progress__avanzar-blanca h6, .progress__avanzar-blanca .h6 {
+    font-size: 1.3rem; }
+
 .footer {
   width: 100%;
   height: auto;
   padding: 1.5rem;
-  margin-top: 1.5rem;
   margin-bottom: 0;
   font-size: 1rem;
-  text-align: left;
   color: #0e0e0e;
   text-align: center;
   display: flex;
@@ -7925,7 +7973,9 @@ p {
     text-align: left; }
   .intro-pagina {
     padding-left: 6rem;
-    padding-right: 6rem; } }
+    padding-right: 6rem; }
+  .progress {
+    margin: 3rem 8rem 3rem 8rem; } }
 
 @media (max-width: 576px) {
   .portada h1, .portada .h1 {
@@ -7938,8 +7988,8 @@ p {
     padding-right: 4rem; } }
 
 .cards {
-  margin-top: 4rem;
-  margin-bottom: 4rem; }
+  margin-top: 6rem;
+  margin-bottom: 6rem; }
   .cards .card:hover {
     transition-duration: .4s;
     transform: translate(0rem, -1rem); }
@@ -7986,11 +8036,12 @@ p {
 .tools {
   background-color: #FFFFFF; }
 
-.footer__tools {
-  margin-top: 4rem; }
-
 .portada.ejemplos {
   background-image: url(../images/leon-vbxyFxlgpjM-unsplash.jpg); }
+
+.ejemplos__section {
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
 
 .ejemplos__post {
   text-align: center; }

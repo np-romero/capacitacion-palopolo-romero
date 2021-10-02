@@ -65,10 +65,7 @@ p {
 }
 
 .intro-pagina {
-    padding-top: 1.2rem;
-    padding-bottom: 2.4rem;
-    padding-left: 12rem;
-    padding-right: 12rem;
+    padding: 1.2rem 12rem 2.4rem 12rem;
     background-color: $color-intro;
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
@@ -80,21 +77,83 @@ p {
         text-align: center;
         }
         p {            
-            font-size: 1.2rem;
-            line-height: 1.5;
-            text-align: center;
-            margin-bottom: 0rem;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 0rem;
             }
+}
+
+.avanzar {
+    display: flex;
+    flex-direction: column;
+    a{
+    background-color: #009EB3;
+    color: #FFFFFF;
+    padding: .8rem;
+    border-radius: .1rem;
+    }
+    a:hover {
+        background-color: #018394;
+    }
+    p {
+    font-size: .9rem;
+    margin-bottom: 1rem;
+    }
+    button {
+    background-color: #009EB3;
+    color: #FFFFFF;
+    padding: .8rem;
+    border-radius: .1rem;
+        }
+}
+
+.avanzar.pages {
+    flex-direction: row;
+    justify-content: space-around;
+    .boton {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .volver-inicio{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+.progress__avanzar {
+    background-color: #e4e3e3;
+    padding: 2rem;
+    h6 {
+        font-size: 1.3rem;
+        text-align: center;
+        line-height: 2rem;
+    }
+    .felicitaciones {
+        font-weight: 200;
+        font-size: 1.3rem;
+        line-height: 3rem;
+    }
+}
+
+.progress__avanzar-blanca {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    margin-top: 0rem;
+    text-align: center;
+    h6 {
+        font-size: 1.3rem;
+    }
 }
 
 .footer {
     width: 100%;
     height: auto;
     padding: 1.5rem;
-    margin-top: 1.5rem;
     margin-bottom: 0;
     font-size: 1rem;
-    text-align: left;
     color: $color-font-s;
     text-align: center;
     display: flex;
@@ -103,8 +162,7 @@ p {
     p {
         margin-bottom: 0rem;
         color:#0e0e0e;
-        line-height: 1.5;
-        
+        line-height: 1.5; 
     }
     a {
         margin-left: auto;
@@ -128,6 +186,9 @@ p {
     .intro-pagina {
         padding-left: 6rem;
         padding-right: 6rem;
+    }
+    .progress {
+        margin: 3rem 8rem 3rem 8rem;
     }
     
 }

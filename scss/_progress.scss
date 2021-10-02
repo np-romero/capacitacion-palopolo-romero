@@ -17,10 +17,7 @@
   @include border-radius($progress-border-radius);
   @include box-shadow($progress-box-shadow);
   /* EDICIONES MIAS */
-  margin-left: 8rem;
-  margin-right: 8rem;
-  margin-bottom: 3rem;
-  margin-top: 1rem;
+  margin: 3rem 17.7rem 3rem 17.7rem;
 }
 
 .progress-bar {
@@ -33,6 +30,11 @@
   white-space: nowrap;
   background-color: #009EB3;
   @include transition($progress-bar-transition);
+}
+
+/* EDICIÓN MIA */
+.progress-bar.completa {
+  background-color: #FF913D;
 }
 
 .progress-bar-striped {
