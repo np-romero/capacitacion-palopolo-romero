@@ -4827,7 +4827,11 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1rem; }
+  padding: 1rem 1rem;
+  /*EDICIONES MIAS*/
+  background-color: #FF913D;
+  color: #FFFFFF;
+  text-transform: uppercase; }
   .offcanvas-header .btn-close {
     padding: 0.5rem 0.5rem;
     margin-top: -0.5rem;
@@ -4836,12 +4840,16 @@ textarea.form-control-lg {
 
 .offcanvas-title {
   margin-bottom: 0;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-weight: bold; }
 
 .offcanvas-body {
   flex-grow: 1;
   padding: 1rem 1rem;
-  overflow-y: auto; }
+  overflow-y: auto;
+  /* EDICIONES MIAS */ }
+  .offcanvas-body a {
+    text-decoration: underline; }
 
 .offcanvas-start {
   top: 0;
@@ -7937,10 +7945,13 @@ p {
   padding: 2rem;
   padding-bottom: 4rem;
   padding-top: 4rem;
-  margin-top: 0rem;
+  margin-top: 4.5rem;
   text-align: center; }
   .progress__avanzar-blanca h6, .progress__avanzar-blanca .h6 {
-    font-size: 1.3rem; }
+    font-size: 1.2rem; }
+
+.avanzar-inicio {
+  margin-top: 0rem; }
 
 .footer {
   width: 100%;

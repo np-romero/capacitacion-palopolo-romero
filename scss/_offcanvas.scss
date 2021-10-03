@@ -23,6 +23,10 @@
   align-items: center;
   justify-content: space-between;
   padding: $offcanvas-padding-y $offcanvas-padding-x;
+  /*EDICIONES MIAS*/
+  background-color: #FF913D;
+  color: #FFFFFF;
+  text-transform: uppercase;
 
   .btn-close {
     padding: ($offcanvas-padding-y * .5) ($offcanvas-padding-x * .5);
@@ -35,12 +39,17 @@
 .offcanvas-title {
   margin-bottom: 0;
   line-height: $offcanvas-title-line-height;
+  font-weight: bold;
 }
 
 .offcanvas-body {
   flex-grow: 1;
   padding: $offcanvas-padding-y $offcanvas-padding-x;
   overflow-y: auto;
+  /* EDICIONES MIAS */
+  a {
+    text-decoration: underline;
+  }
 }
 
 .offcanvas-start {
