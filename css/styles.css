@@ -7924,7 +7924,7 @@ p {
   background-color: #e4e3e3;
   padding: 2rem; }
   .progress__avanzar h6, .progress__avanzar .h6 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-align: center;
     line-height: 2rem; }
   .progress__avanzar .felicitaciones {
@@ -7997,35 +7997,50 @@ p {
 .portada.metodologias {
   background-image: url(../images/leon-Oalh2MojUuk-unsplash.jpg); }
 
-.metodologias {
-  padding: 3rem; }
-  .metodologias .metodologias__descripcion {
+.metodologias__videos {
+  padding: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+  .metodologias__videos .metodologias__descripcion {
     align-self: center;
     margin-right: 0rem;
     margin-left: 3rem;
-    padding-top: 1rem; }
-  .metodologias .metodologias__descripcion-left {
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+  .metodologias__videos .metodologias__descripcion-left {
     align-self: center;
     margin-right: 3rem;
     margin-left: 0rem; }
-  .metodologias h3, .metodologias .h3 {
+  .metodologias__videos h3, .metodologias__videos .h3 {
+    font-size: 2.5rem;
     color: #FF913D;
     font-weight: bold;
     padding-bottom: 1.3rem; }
-  .metodologias p {
-    padding: auto;
+  .metodologias__videos p {
     text-align: left;
     margin-bottom: 0rem;
     color: #0e0e0e; }
+  .metodologias__videos a {
+    text-decoration: underline;
+    font-weight: bold; }
+
+.ratio {
+  box-shadow: 3px 3px 3px #7c7c7c; }
 
 .offcanvas-body p {
   text-align: left; }
 
 @media (max-width: 768px) {
-  .metodologias .metodologias__descripcion {
-    align-self: center;
-    margin-right: 3rem;
-    margin-left: 0rem; } }
+  .metodologias__videos {
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+    margin-top: 0rem; }
+    .metodologias__videos .metodologias__descripcion {
+      align-self: center;
+      margin-left: 0rem; } }
+
+.metodologias__descripcion-left {
+  margin-bottom: 1.5rem; }
 
 .body__tools {
   background-color: #e4e3e3; }

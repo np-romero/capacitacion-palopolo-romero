@@ -1,13 +1,16 @@
 .portada.metodologias {
     background-image: url(../images/leon-Oalh2MojUuk-unsplash.jpg);
 }   
-.metodologias {
-    padding: 3rem;    
+.metodologias__videos {
+    padding: 3rem;  
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     .metodologias__descripcion {
         align-self: center;
         margin-right: 0rem;
         margin-left: 3rem;
         padding-top: 1rem;
+        padding-bottom: 1rem;
     }   
     .metodologias__descripcion-left {
         align-self: center;
@@ -15,16 +18,24 @@
         margin-left: 0rem;
     }
     h3 {
+        font-size: 2.5rem;
         color: $color-secundario;
         font-weight: bold;
         padding-bottom: 1.3rem;
     } 
     p {
-        padding: auto;
         text-align: left;
         margin-bottom: 0rem;
         color:#0e0e0e;
-    }  
+    }
+    a {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}
+
+.ratio {
+    box-shadow: 3px 3px 3px #7c7c7c ;
 }
 
 .offcanvas-body p{
@@ -32,9 +43,17 @@
 }
 
 @media (max-width: 768px) {
-    .metodologias .metodologias__descripcion {
-        align-self: center;
-        margin-right: 3rem;
+    .metodologias__videos {
         margin-left: 0rem;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+        .metodologias__descripcion {
+            align-self: center;
+            margin-left: 0rem;
+        }
     }    
-}
+        }
+        .metodologias__descripcion-left {
+            margin-bottom: 1.5rem;
+        }
+    
