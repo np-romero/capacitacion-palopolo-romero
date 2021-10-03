@@ -159,16 +159,17 @@ p {
     display: flex;
     background-color: $color-secundario;
     align-items: center;
-    p {
+    a {
         margin-bottom: 0rem;
         color:#0e0e0e;
-        line-height: 1.5; 
+        line-height: 1.5;
+        text-decoration: underline;
     }
-    a {
+    span {
         margin-left: auto;
         cursor: pointer;
         font-weight: bold;
-    } 
+    }
 }
 
 
