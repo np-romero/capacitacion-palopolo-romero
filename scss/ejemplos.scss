@@ -16,6 +16,7 @@
     }
     a {
         font-weight: bold;
+        text-decoration: underline;
     }
     .ejemplo__imagen {
         width: 20rem;
@@ -23,6 +24,7 @@
         margin-bottom: 1rem;
         align-self: center;
         grid-row: 1 / 4;
+        box-shadow: 2px 2px 2px #7c7c7c ;
     }
     .ejemplo__descripcion {
         grid-area: box__4;
@@ -34,7 +36,7 @@
     .ejemplos__titulo {
         padding: 1.5rem;
         text-align: center;
-        color: $color-font-h;
+        color: $color-secundario;
         font-weight: bold;
         text-transform: uppercase;
     }

@@ -8077,13 +8077,15 @@ p {
     font-size: 1rem;
     margin-bottom: 0px; }
   .ejemplos__post a {
-    font-weight: bold; }
+    font-weight: bold;
+    text-decoration: underline; }
   .ejemplos__post .ejemplo__imagen {
     width: 20rem;
     height: auto;
     margin-bottom: 1rem;
     align-self: center;
-    grid-row: 1 / 4; }
+    grid-row: 1 / 4;
+    box-shadow: 2px 2px 2px #7c7c7c; }
   .ejemplos__post .ejemplo__descripcion {
     grid-area: box__4;
     grid-column-start: 2;
@@ -8092,7 +8094,7 @@ p {
   .ejemplos__post .ejemplos__titulo {
     padding: 1.5rem;
     text-align: center;
-    color: #272727;
+    color: #FF913D;
     font-weight: bold;
     text-transform: uppercase; }
 
