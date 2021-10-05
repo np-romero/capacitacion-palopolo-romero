@@ -7950,8 +7950,8 @@ p {
 .progress__avanzar-blanca {
   background-color: #FFFFFF;
   padding: 2rem;
-  padding-bottom: 4rem;
-  padding-top: 4rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
   margin-top: 4.5rem;
   text-align: center; }
   .progress__avanzar-blanca h6, .progress__avanzar-blanca .h6 {
