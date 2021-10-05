@@ -82,6 +82,9 @@ p {
         text-align: center;
         margin-bottom: 0rem;
             }
+        a {
+        text-decoration: underline;
+        }
 }
 
 .avanzar {
@@ -133,6 +136,9 @@ p {
         font-weight: 200;
         font-size: 1.3rem;
         line-height: 3rem;
+        span {
+            font-weight: bold;
+        }
     }
 }
 
@@ -175,6 +181,10 @@ p {
         cursor: pointer;
         font-weight: bold;
     }
+}
+
+.btn-primary {
+    color: #FFFFFF;
 }
 
 

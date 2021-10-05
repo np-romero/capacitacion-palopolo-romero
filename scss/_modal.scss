@@ -98,7 +98,9 @@
   padding: $modal-header-padding;
   border-bottom: $modal-header-border-width solid $modal-header-border-color;
   @include border-top-radius($modal-content-inner-border-radius);
-
+  h5 {
+    font-weight: bold;
+  }
   .btn-close {
     padding: ($modal-header-padding-y * .5) ($modal-header-padding-x * .5);
     margin: ($modal-header-padding-y * -.5) ($modal-header-padding-x * -.5) ($modal-header-padding-y * -.5) auto;
@@ -121,6 +123,7 @@
   padding: $modal-inner-padding;
   a {
     font-weight: bold;
+    text-decoration: underline;
   }
 }
 
