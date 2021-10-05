@@ -22,6 +22,7 @@
   &:hover {
     color: $body-color;
     text-decoration: if($link-hover-decoration == underline, none, null);
+
   }
 
   .btn-check:focus + &,

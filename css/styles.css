@@ -7984,6 +7984,10 @@ p {
 .btn-primary {
   color: #FFFFFF; }
 
+.btn-primary:hover {
+  color: #FFFFFF;
+  background-color: #018394; }
+
 @media (max-width: 1200px) {
   .intro-pagina {
     padding-left: 8rem;
