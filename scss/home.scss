@@ -1,3 +1,25 @@
+.banner {
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  background-image: url(../images/gabrielle-henderson-5HqtJT2l9Gw-unsplash.jpg);
+  background-position: 25% 60%;
+  h2 {
+    padding: 1rem;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: $color-font;
+    text-shadow: 3px 3px 0px #0e0e0e;
+    align-self: center;
+  }
+}
+
+.card {
+  box-shadow: 3px 3px 3px #7c7c7c;
+}
+
 .cards {
     margin-top: 6rem;
     margin-bottom: 6rem;

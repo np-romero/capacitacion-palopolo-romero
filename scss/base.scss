@@ -65,7 +65,7 @@ p {
 }
 
 .intro-pagina {
-    padding: 1.2rem 12rem 2.4rem 12rem;
+    padding: 1.2rem 1.2rem 2.4rem 1.2rem;
     background-color: $color-intro;
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
@@ -87,7 +87,20 @@ p {
         }
 }
 
-.avanzar {
+.como-funciona {
+    background-color: $bg-color;
+    height: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+      line-height: 4rem; 
+    }
+  }
+
+.avanzar__botones {
     display: flex;
     flex-direction: column;
     a{
@@ -95,9 +108,10 @@ p {
     color: #FFFFFF;
     padding: .8rem;
     border-radius: .1rem;
+    box-shadow: 2px 2px 2px #7c7c7c ;
     }
     a:hover {
-        background-color: #018394;
+        background-color: #018394;  
     }
     p {
     font-size: .9rem;
@@ -108,10 +122,10 @@ p {
     color: #FFFFFF;
     padding: .8rem;
     border-radius: .1rem;
-        }
+    }
 }
 
-.avanzar.pages {
+.avanzar__botones.pages {
     flex-direction: row;
     justify-content: space-around;
     .boton {
@@ -130,14 +144,17 @@ p {
     h6 {
         font-size: 1.2rem;
         text-align: center;
-        line-height: 2rem;
     }
     .felicitaciones {
-        font-weight: 200;
-        font-size: 1.3rem;
-        line-height: 3rem;
-        span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h6 {
+            font-size: 1.3rem;
+            text-align: center;
+            line-height: 2rem;
             font-weight: bold;
+            margin-bottom: 2rem;
         }
     }
 }
@@ -154,10 +171,9 @@ p {
     }
 }
 
-.avanzar-inicio
-    {
+.avanzar-inicio {
     margin-top: 0rem;
-    }
+}
 
 .footer {
     width: 100%;
@@ -192,8 +208,6 @@ p {
     background-color: #018394;
 }
 
-
-
 @media (max-width: 1200px) {
     .intro-pagina {
         padding-left: 8rem;
@@ -205,7 +219,7 @@ p {
     .portada h1 {
         font-size: 3.5rem;
         text-align: left;
-        }
+    }
     .intro-pagina {
         padding-left: 6rem;
         padding-right: 6rem;
@@ -213,24 +227,25 @@ p {
     .progress {
         margin: 3rem 8rem 3rem 8rem;
     }
+    .como-funciona p {
+        line-height: 2.5rem;
+    }
     
 }
 
 @media (max-width: 576px) {
     .portada h1 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
         text-align: left;
-        }
+    }
     .row {
         width: 80%;
-        }
+    }
     .intro-pagina {
         padding-left: 4rem;
         padding-right: 4rem;
-        }
     }
-
-
-
-
-  
+    .como-funciona p {
+        line-height: 2.5rem;
+    }
+}
